@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/a619bb4cee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <button id="dark-mode-toggle">
+    <i class="fa-solid fa-moon"></i>
+</button>
+               <img src="Images/logo.png"class="logo">
+               <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+              </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Tech Enthusiast & Learner</p>
+                <h1>Hi, I'm <span>Tejaswi</span><br> From India</h1>
+            </div>
+    </div>
+    </div>
+    <!----------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a passionate BCA graduate exploring AI/ML, Python, and cloud computing. I love learning, building real-world projects, and growing every day toward my dream career in tech.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Python</span><br>Python Learner</li>
+                                <li><span>Java</span><br>Java Learner</li>
+                                <li><span>Cloud Computing</span><br>AWS CC Intern</li>
+                                <li><span>Artificial Intelligence</span><br>Artificial Intelligence Intern</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>AWS Cloud Computing Internship</span><br>Deployed apps using EC2 and S3</li>
+                                <li><span>Ulearn AI/ML Internship</span><br>Built and trained ML models using python;improved model accuracy by 15%</li>
+                                <li><span>Cybersecurity simulation</span><br>Completed hands-on modules in threat detection and network security</li>
+                                <li><span>TCS Micro Internship</span><br>Artificial Intelligence Intern</li>
+                                <li><span>Artificial Intelligence Intern</span><br>Built Age and gender detection project using OpenCV</li>
+                                <li><span>Mobile App Hackathon</span><br>Build a functional Android app using Java and XML</li>       
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2025</span><br>Bachelor of Computer Applications</li>
+                                <li><span>2021</span><br>Intermediate from Sri Chaitanya Jr College</li>
+                                <li><span>2019</span><br>High school from Pollocks School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------services-------------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="Services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Machine Learning Projects</h2>
+                    <p>Building mini ML models for prediction and classification using real datasets;creating visual reports and dashboards</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Python Development</h2>
+                    <p>Simple python-based apps, automation scripts, and beginner-level AI/ML models using pandas,NumPy, and scikit-learn</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Cloud Deployment</h2>
+                    <p>Deploying basic applications using AWS EC2 and S3, Version control with Github, and hosting practice projects</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------Certificates-------------->
+<div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="certificates-list">
+            <!-- Certificate 1 -->
+            <div class="certificate-frame" onclick="openModal('Images/cert-1.jpg')">
+                <div class="certificate-mat">
+                    <img src="Images/cert-1.jpg" alt="AWS Certificate">
+                    <div class="certificate-info">
+                        <h3>AWS Cloud Computing</h3>
+                        <div class="certificate-hover">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Click to view</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-stand"></div>
+            </div>
+            
+            <!-- Certificate 2 -->
+            <div class="certificate-frame" onclick="openModal('Images/cert-2.jpg')">
+                <div class="certificate-mat">
+                    <img src="Images/cert-2.jpg" alt="AI/ML Certificate">
+                    <div class="certificate-info">
+                        <h3>AI/ML Internship</h3>
+                        <div class="certificate-hover">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Click to view</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-stand"></div>
+            </div>
+            
+            <!-- Certificate 3 -->
+            <div class="certificate-frame" onclick="openModal('Images/cert-3.jpg')">
+                <div class="certificate-mat">
+                    <img src="Images/cert-3.jpg" alt="Python Certificate">
+                    <div class="certificate-info">
+                        <h3>Python Programming</h3>
+                        <div class="certificate-hover">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Click to view</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-stand"></div>
+            </div>
+            
+            <!-- Add more certificates following the same pattern -->
+             <!-- Certificate 4 -->
+            <div class="certificate-frame" onclick="openModal('Images/cert-4.jpg')">
+                <div class="certificate-mat">
+                    <img src="Images/cert-4.jpg" alt="Introduction to computer Science certificate-frame">
+                    <div class="certificate-info">
+                        <h3>Harvard University Introduction to Computer science</h3>
+                        <div class="certificate-hover">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Click to view</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-stand"></div>
+            </div>
+            <!-- Certificate 5 -->
+            <div class="certificate-frame" onclick="openModal('Images/cert-5.jpg')">
+                <div class="certificate-mat">
+                    <img src="Images/cert-5.jpg" alt="Foundations of AI Certificate">
+                    <div class="certificate-info">
+                        <h3>Foundations of AI</h3>
+                        <div class="certificate-hover">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Click to view</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-stand"></div>
+            </div>
+            <!-- Certificate 6 -->
+            <div class="certificate-frame" onclick="openModal('Images/cert-6.jpg')">
+                <div class="certificate-mat">
+                    <img src="Images/cert-6.jpg" alt="Java Certificate">
+                    <div class="certificate-info">
+                        <h3>Java Programming</h3>
+                        <div class="certificate-hover">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Click to view</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-stand"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Enhanced Certificate Modal -->
+<div id="certificate-modal" class="modal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <div class="modal-certificate-frame">
+        <div class="modal-certificate-mat">
+            <img class="modal-content" id="modal-image">
+        </div>
+    </div>
+    <div class="modal-nav">
+        <button class="modal-prev" onclick="navigateModal(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="modal-next" onclick="navigateModal(1)"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+</div>
+
+<!--------------Learning Journey-------------->
+<div id="learning">
+    <div class="container">
+        <h1 class="sub-title">My Learning Journey</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-content">
+                    <h3>Java+DSA</h3>
+                    <p>Currently diving deeper into Advanced Java and DSA Concepts</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 65%">65%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Data Structures</h3>
+                    <p>Learning Data Structures and Algorithms</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 40%">40%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2023 - 2024</div>
+                <div class="timeline-content">
+                    <h3>Python for Data Science</h3>
+                    <p>Mastered pandas, NumPy, and scikit-learn for data analysis</p>
+                    <div class="progress-container">
+                        <div class="progress-bar completed" style="width: 100%">Completed</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>AI Fundamentals</h3>
+                    <p>Completed foundational courses in machine learning and computer vision</p>
+                    <div class="progress-container">
+                        <div class="progress-bar completed" style="width: 100%">Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-----------------portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Age and gender detection</h3>
+                        <p>The AI model that detects the age and gender for individual in photos and videos.Get the source code from my github repository</p>
+                        <a href="https://github.com/tadelutejaswi/Age-Gender-Detection-Backup" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>ML Prediction Model</h3>
+                        <p>Created using Python, pandas, and scikit-learn.Predicts house prices based on data inputs using regression models.Get the source code from my github repository</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Amazon Homepage Clone</h3>
+                        <p>A front-end clone of the Amazon homepage Built by HTML & CSS.Designed for UI/UX practice and web Structure understanding.Get the source code from my github repository</p>
+                        <a href="https://github.com/tadelutejaswi/Amazon_clone" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!------------content------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>tadelutejaswi709@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/tejaswi-madeena-tadelu-6780a3337/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/Tejaswi662746"><i class="fa-brands fa-twitter-square"></i></a>
+                    </div>
+                    <a href="Images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Tejaswi. Made by <i class="fa-solid fa-heart"></i> Tejaswi</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby6mhyZR7VD4K-PXLx-syJANUAp8BCzcJ7vtZO8KfxyZ-NOMDJMIvSlMGzA4QqIJrsw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = 'Message sent successfully!'
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <div class="chatbot-container">
+    <div class="chatbot-header">
+        <h3>Ask Me Anything</h3>
+        <i class="fa-solid fa-robot"></i>
+        <button class="close-chatbot" onclick="toggleChatbot()">×</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+        <div class="bot-message">Hi there! I'm Tejaswi's assistant. Ask me about my skills, projects, or experience.</div>
+    </div>
+    <div class="chatbot-input">
+        <input type="text" id="chatbot-input" placeholder="Type your question...">
+        <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+</div>
+<button class="chatbot-toggle" onclick="toggleChatbot()">
+    <i class="fa-solid fa-comment-dots"></i>
+</button>
+</body>
+</html>
