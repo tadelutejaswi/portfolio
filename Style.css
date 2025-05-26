@@ -937,3 +937,303 @@ body.light-mode .social-icons a {
         background-image: url(Images/phone-background-light.png);
     }
 }
+
+
+
+
+
+/* ==================== MOBILE RESPONSIVE STYLES ==================== */
+@media only screen and (max-width: 600px) {
+    /* General Mobile Styles */
+    .container {
+        padding: 10px 5%;
+    }
+    
+    .sub-title {
+        font-size: 32px;
+    }
+    
+    /* Header Section */
+    #header {
+        height: 100vh;
+        background-image: url(Images/phone-background.png);
+        background-position: center;
+    }
+    
+    .header-text {
+        margin-top: 50%;
+        font-size: 16px;
+    }
+    
+    .header-text h1 {
+        font-size: 36px;
+    }
+    
+    /* Navigation */
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul.active {
+        right: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    /* About Section */
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    
+    .about-col-2 {
+        font-size: 14px;
+    }
+    
+    .tab-titles {
+        justify-content: space-between;
+    }
+    
+    .tab-links {
+        font-size: 16px;
+        margin-right: 0;
+        padding: 10px;
+    }
+    
+    /* Services Section */
+    .Services-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    
+    .Services-list div {
+        padding: 20px;
+    }
+    
+    /* Certificates Section */
+    .certificates-list {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .certificate-frame {
+        height: 300px;
+    }
+    
+    .certificate-mat {
+        padding: 10px;
+        border-width: 10px;
+        border-bottom-width: 30px;
+    }
+    
+    .certificate-info h3 {
+        font-size: 14px;
+    }
+    
+    /* Learning Journey */
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-date {
+        width: 100px;
+        left: -130px !important;
+        right: auto !important;
+    }
+    
+    .timeline-content::after {
+        left: 23.5px !important;
+    }
+    
+    /* Portfolio Section */
+    .work-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    
+    /* Contact Section */
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    
+    .contact-right form {
+        margin-top: 30px;
+    }
+    
+    /* Modal Styles */
+    .modal-certificate-mat {
+        max-width: 95%;
+        padding: 10px;
+        border-width: 10px;
+        border-bottom-width: 30px;
+    }
+    
+    .close-modal {
+        top: 15px;
+        right: 20px;
+        font-size: 30px;
+    }
+    
+    .modal-nav {
+        bottom: 15px;
+    }
+    
+    .modal-prev, .modal-next {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    /* Chatbot */
+    .chatbot-container {
+        width: 90%;
+        right: 5%;
+        height: 60vh;
+    }
+    
+    .chatbot-toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    /* Visitor Counter */
+    .visitor-counter {
+        left: 5%;
+        bottom: 10px;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    /* Dark Mode Toggle */
+    #dark-mode-toggle {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    
+    /* Light Mode Adjustments */
+    body.light-mode #header {
+        background-image: url(Images/phone-background-light.png);
+    }
+}
+
+/* Additional Mobile Optimizations for Very Small Screens */
+@media only screen and (max-width: 400px) {
+    .header-text {
+        margin-top: 70%;
+    }
+    
+    .header-text h1 {
+        font-size: 28px;
+    }
+    
+    .sub-title {
+        font-size: 28px;
+    }
+    
+    .certificate-frame {
+        height: 250px;
+    }
+    
+    .certificate-info h3 {
+        font-size: 12px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 16px;
+    }
+    
+    .timeline-content p {
+        font-size: 12px;
+    }
+    
+    .contact-left p i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    
+    .social-icons a {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+}
+
+/* Tablet Responsive Styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        padding: 10px 8%;
+    }
+    
+    .header-text {
+        margin-top: 30%;
+    }
+    
+    .certificates-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .work-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timeline::after {
+        left: 50%;
+    }
+    
+    .timeline-item {
+        width: 50%;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-date {
+        right: -140px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-date {
+        left: -140px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content::after {
+        right: -7.5px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content::after {
+        left: -7.5px;
+    }
+}
