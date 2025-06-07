@@ -171,6 +171,26 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
+/* Additional styles for project links inside Services */
+
+.Services-list div a {
+    font-size: 14px;            /* Slightly bigger for readability */
+    color: #ddd;                /* Light grey for normal state */
+    margin-right: 15px;         /* Spacing between multiple project links */
+    padding: 6px 12px;          /* Padding to make links look like buttons */
+    border: 1.5px solid #ddd;   /* Border to highlight links */
+    border-radius: 6px;         /* Rounded corners */
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.Services-list div a:hover {
+    background: #fff;           /* White background on hover */
+    color: #ff004f;             /* Accent color text on hover */
+    border-color: #ff004f;      /* Accent border on hover */
+    text-decoration: none;      /* Remove underline */
+    cursor: pointer;
+}
+
 /* -------------portfolio--------------*/
 #portfolio{
     padding: 50px 0;
