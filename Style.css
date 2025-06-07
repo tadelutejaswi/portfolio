@@ -190,6 +190,27 @@ nav ul li a:hover::after{
     text-decoration: none;      /* Remove underline */
     cursor: pointer;
 }
+/* Colored styles for project links inside Services */
+
+.Services-list div a {
+    font-size: 14px;
+    color: #ff79c6;             /* Soft pink/lavender color for links */
+    margin-right: 15px;
+    padding: 6px 12px;
+    border: 1.5px solid #ff79c6; /* Matching border color */
+    border-radius: 6px;
+    background-color: transparent;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.Services-list div a:hover {
+    background: #ff004f;         /* Bright pink background on hover */
+    color: #fff;                 /* White text on hover */
+    border-color: #ff004f;       /* Border matches background */
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /* -------------portfolio--------------*/
 #portfolio{
